@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "JCSegmentMenu.h"
 @interface ViewController : UIViewController
 
 

@@ -15,6 +15,7 @@
 		179735D71C8FB10700DDD37C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179735D51C8FB10700DDD37C /* LaunchScreen.storyboard */; };
 		179735E21C8FB10700DDD37C /* JCSegmentMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 179735E11C8FB10700DDD37C /* JCSegmentMenuTests.m */; };
 		179735ED1C8FB10700DDD37C /* JCSegmentMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 179735EC1C8FB10700DDD37C /* JCSegmentMenuUITests.m */; };
+		179735FD1C8FB1A400DDD37C /* JCSegmentMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 179735FC1C8FB1A400DDD37C /* JCSegmentMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		179735E81C8FB10700DDD37C /* JCSegmentMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCSegmentMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		179735EC1C8FB10700DDD37C /* JCSegmentMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSegmentMenuUITests.m; sourceTree = "<group>"; };
 		179735EE1C8FB10700DDD37C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		179735FB1C8FB1A400DDD37C /* JCSegmentMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCSegmentMenu.h; sourceTree = "<group>"; };
+		179735FC1C8FB1A400DDD37C /* JCSegmentMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSegmentMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		179735C61C8FB10700DDD37C /* JCSegmentMenu */ = {
 			isa = PBXGroup;
 			children = (
+				179735FA1C8FB18200DDD37C /* JCSegmentMenu */,
 				179735CA1C8FB10700DDD37C /* AppDelegate.h */,
 				179735CB1C8FB10700DDD37C /* AppDelegate.m */,
 				179735CD1C8FB10700DDD37C /* ViewController.h */,
@@ -138,6 +142,15 @@
 				179735EE1C8FB10700DDD37C /* Info.plist */,
 			);
 			path = JCSegmentMenuUITests;
+			sourceTree = "<group>";
+		};
+		179735FA1C8FB18200DDD37C /* JCSegmentMenu */ = {
+			isa = PBXGroup;
+			children = (
+				179735FB1C8FB1A400DDD37C /* JCSegmentMenu.h */,
+				179735FC1C8FB1A400DDD37C /* JCSegmentMenu.m */,
+			);
+			path = JCSegmentMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				179735CF1C8FB10700DDD37C /* ViewController.m in Sources */,
 				179735CC1C8FB10700DDD37C /* AppDelegate.m in Sources */,
 				179735C91C8FB10700DDD37C /* main.m in Sources */,
+				179735FD1C8FB1A400DDD37C /* JCSegmentMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
