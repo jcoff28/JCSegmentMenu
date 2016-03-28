@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "JCSegmentMenu.h"
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <JCSegmentMenuDelegate>
 
+@property (strong, nonatomic) IBOutlet JCSegmentMenu *segmentMenu;
+@property (strong, nonatomic) IBOutlet UIView *detailView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 

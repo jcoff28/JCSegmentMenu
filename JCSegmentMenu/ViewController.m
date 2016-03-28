@@ -13,16 +13,39 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    NSArray* _images;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_segmentMenu setDelegate:self];
+    _segmentMenu.topSepHeight = 5;
+    _segmentMenu.bottomSepHeight = 5;
+    
+    UIButton* b1 = [_segmentMenu defaultSegmentButtonWithOptions:@{@"type":@"image", @"imageName":@"note_icon.png"}];
+    UIButton* b2 = [_segmentMenu defaultSegmentButtonWithOptions:@{@"type":@"image", @"imageName":@"contact_icon.png"}];
+    UIButton* b3 = [_segmentMenu defaultSegmentButtonWithOptions:@{@"type":@"image", @"imageName":@"file_icon.png"}];
+    UIButton* b4 = [_segmentMenu defaultSegmentButtonWithOptions:@{@"type":@"image", @"imageName":@"chat_icon.png"}];
+    
+    [_segmentMenu setSegmentButtons:@[b1, b2, b3, b4]];
+    
+    _images = @[ [UIImage imageNamed:@"compiling.png"],
+                 [UIImage imageNamed:@"cryptography.png"],
+                 [UIImage imageNamed:@"in_ur_reality.png"],
+                 [UIImage imageNamed:@"sandwich.png"]];
+}
+
+-(void)button:(UIButton *)sender pressedAtIndex:(NSInteger)index {
+    [_imageView setImage:_images[index%[_images count]]];
 }
 
 -(void)debugShowBigPointer {
-    UIView* pointer = [JCSegmentMenu pointerViewWithEdgeLength:70 fillColor:nil borderColor:nil];
+    UIView* pointer =
+    [JCSegmentMenu pointerViewWithHeight:30 fillColor:nil borderColor:nil];
+    //[JCSegmentMenu pointerViewWithEdgeLength:70 fillColor:nil borderColor:nil];
     [self.view addSubview:pointer];
-    pointer.center = self.view.center;
+    pointer.center = CGPointMake(self.view.center.x, self.view.center.y - 300);
 }
     
 -(void)debugShowSpacedViews {
