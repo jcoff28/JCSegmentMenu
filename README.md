@@ -47,6 +47,18 @@ The menu alerts the delegate when a segment is pressed.
 @end
 ```
 
+Customization
+-----------------------------
+
+```objc
+@property (nonatomic) CGFloat topSepHeight;
+@property (nonatomic) CGFloat bottomSepHeight;
+@property (nonatomic) CGFloat pointerHeight;
+@property (nonatomic) UIColor* separatorColor;
+```
+
+Size, background color, etc are customizable using IB and autolayout.
+
 Author
 -----------------
 
