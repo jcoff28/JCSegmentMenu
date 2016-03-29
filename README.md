@@ -8,13 +8,14 @@ Purpose
 
 JCSegmentMenu is a light-weight front end for a tab control. Use it, love it, fork it, do stuff.
 
-<!---
-![Gif](JCCrescentMenu/Example/Images/JCCrescentMenuOpen.gif)
 
-![Gif](JCCrescentMenu/Example/Images/JCCrescentMenuClose.gif)
+![](JCSegmentMenu/Images/SegmentDemo1.png)
 
-![Picture](JCCrescentMenu/Example/Images/JCCrescentMenuAllOpen.jpg)
--->
+![](JCSegmentMenu/Images/SegmentDemo1.png)
+
+![](JCSegmentMenu/Images/SegmentDemo1.png)
+
+![](JCSegmentMenu/Images/SegmentDemo1.png)
 
 Usage
 -----------------------------
