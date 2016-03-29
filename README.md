@@ -11,11 +11,11 @@ JCSegmentMenu is a light-weight front end for a tab control. Use it, love it, fo
 
 ![](JCSegmentMenu/Images/SegmentDemo1.png)
 
-![](JCSegmentMenu/Images/SegmentDemo1.png)
+![](JCSegmentMenu/Images/SegmentDemo2.png)
 
-![](JCSegmentMenu/Images/SegmentDemo1.png)
+![](JCSegmentMenu/Images/SegmentDemo3.png)
 
-![](JCSegmentMenu/Images/SegmentDemo1.png)
+![](JCSegmentMenu/Images/SegmentDemo4.png)
 
 Usage
 -----------------------------
