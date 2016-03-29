@@ -203,12 +203,16 @@
     CGFloat width = options[@"width"] ? [options[@"width"] floatValue] : (self.frame.size.height - _topSepHeight - _bottomSepHeight)/2.;
     CGFloat height = options[@"height"] ? [options[@"height"] floatValue] : width;
     UIButton* ret;
+    NSString* buttonType = options[@"type"];
+    if (!buttonType) {
+        buttonType = @"image";
+    }
     
-    if ([options[@"type"] isEqualToString:@"numbered"]) {
+    if ([buttonType isEqualToString:@"numbered"]) {
         ret = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width, height)];
         [ret setTitle:[NSString stringWithFormat:@"%d", [options[@"index"] intValue]] forState:UIControlStateNormal];
     }
-    else if ([options[@"type"] isEqualToString:@"image"]) {
+    else if ([buttonType isEqualToString:@"image"]) {
         ret = [UIButton buttonWithType:UIButtonTypeCustom];
         [ret setFrame:CGRectMake(0, 0, width, height)];
         
